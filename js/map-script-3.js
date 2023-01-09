@@ -42,7 +42,7 @@
   		var mapOptions = {
     		zoom: 16,		
 			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(35.441921, -97.432528),
+    		center: new google.maps.LatLng(40.40757981942816, -3.875512531186438),
 			panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
@@ -85,18 +85,18 @@
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
 		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.441921, -97.432528),
+       		position: new google.maps.LatLng(40.407716616752026, -3.87548991526033),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="wedding-marker" class="main-icon-wrapper"><div class="big-circle scale-animation"></div><div class="main-icon-text">Wedding</br>Location</div></div>',
+         	labelContent: '<div id="wedding-marker" class="main-icon-wrapper"><div class="big-circle scale-animation"></div><div class="main-icon-text">El Antiguo</br>Convento</div></div>',
        		labelAnchor: new google.maps.Point(88, 88),
        		labelClass: "labels" // the CSS class for the label
      	});
 		
 		var marker2 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.440033, -97.437056),
+       		position: new google.maps.LatLng(40.40737349759513, -3.877238715461705),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -107,7 +107,7 @@
      	});
 		
 		var marker3 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.441899, -97.439043),
+       		position: new google.maps.LatLng(40.405313019360975, -3.8776581287971283),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -118,7 +118,7 @@
      	});
 		
 		var marker4 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.443866, -97.437573),
+       		position: new google.maps.LatLng(40.407073650149535, -3.8742776415781623),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -129,7 +129,7 @@
      	});
 		
 		var marker5 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.443835, -97.428649),
+       		position: new google.maps.LatLng(40.40735331218998, -3.880018766747062),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -138,21 +138,7 @@
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
-		
-		var marker6 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.439997, -97.427630),
-       		draggable: false,
-       		raiseOnDrag: false,
-       		icon: ' ',
-       		map: map, 
-         	labelContent: '<div id="airport-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="de-icon-airport"></i></div>',
-       		labelAnchor: new google.maps.Point(27, 27),
-       		labelClass: "labels" // the CSS class for the label
-     	});
 			
-  
-		
-		
 		//INFO WINDOWS 1
 		//=======================================================================================
 		var contentString1 = ''+
@@ -274,32 +260,7 @@
 			window.setTimeout(function() {
       			map.panTo(marker1.getPosition());
     		}, 500);
-  		});
-		
-		
-		//INFO WINDOWS 6
-		//=======================================================================================
-		var contentString6 = ''+
-		'<div class="info-window-wrapper">'+
-			'<h6>AIRPORT</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
-      	'</div>';
-		
-		var marker6_infowindow = new google.maps.InfoWindow({
-      		content: contentString6,
-			maxWidth: 200,
-			pixelOffset: new google.maps.Size(0,-10)
-  		});
-		
-		//ON MARKER CLICK EVENTS
-		google.maps.event.addListener(marker6, 'click', function() {
-			marker6_infowindow.open(map,marker6);	
-  		});
-		
-		
-		
-		
+  		});	
 		
 		//ON BOUND EVENTS AND WINDOW RESIZE
 		//=======================================================================================
