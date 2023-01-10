@@ -1,11 +1,3 @@
-/*============================== 
-	- MAIN SCRIPT JS
-	- Template: MARRY - Responsive HTML Wedding Template
-	- Author: DoubleEight
-	- Version: 1.0.0
-	- Website: www.dethemes.com
-================================= */
-
 /*---------------------- 
 	Script Guide
 ------------------------
