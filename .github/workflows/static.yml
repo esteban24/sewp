@@ -37,9 +37,11 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Replace GOOGLE_MAPS_KEY
         env:
-          ACTIONS_RUNNER_HOOK_JOB_COMPLETED: ./set_google_map_key.sh
           GOOGLE_MAPS_KEY: ${{ secrets.GOOGLE_MAPS_KEY }}
+        run: |
+          ./set_google_map_key.sh
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
